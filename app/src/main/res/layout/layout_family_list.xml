@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardview:cardCornerRadius="5dp"
+    cardview:cardElevation="3dp"
+    cardview:cardPreventCornerOverlap="true"
+    cardview:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                cardview:cardCornerRadius="25dp"
+                cardview:cardElevation="0dp"
+                cardview:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/picIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_menu_profile" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="Jadhav"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/mIdTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="M00001"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statusLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/viewStatusBt"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="View"
+            android:textColor="@color/bluePrimary"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/statusBt"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="Approval Pending"
+            android:textColor="@color/bluePrimary"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/memberLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewBt"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="View"
+                android:textColor="@color/bluePrimary"
+                android:textSize="12dp" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/editBt"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="@color/bluePrimary"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/businessBt"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Business"
+                android:textColor="@color/bluePrimary"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/deathBt"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Death"
+                android:textColor="@color/bluePrimary"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/deleteBt"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@color/bluePrimary"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

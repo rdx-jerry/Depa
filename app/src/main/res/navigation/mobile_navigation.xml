@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.animator.navigation.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.animator.navigation.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.animator.navigation.ui.about.AboutFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_directory"
+        android:name="com.animator.navigation.ui.directory.DirectoryFragment"
+        android:label="@string/menu_directory"
+        tools:layout="@layout/fragment_directory" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.animator.navigation.ui.latest.LatestFragment"
+        android:label="@string/menu_news"
+        tools:layout="@layout/fragment_latest" />
+
+    <fragment
+        android:id="@+id/nav_todays"
+        android:name="com.animator.navigation.ui.todays.TodaysFragment"
+        android:label="@string/menu_todays"
+        tools:layout="@layout/fragment_todays" />
+
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="com.animator.navigation.ui.activity.ActivityFragment"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity" />
+
+    <fragment
+        android:id="@+id/nav_blogs"
+        android:name="com.animator.navigation.ui.blogs.BlogsFragment"
+        android:label="@string/menu_blogs"
+        tools:layout="@layout/fragment_blogs" />
+
+    <fragment
+        android:id="@+id/nav_business"
+        android:name="com.animator.navigation.ui.business.BusinessFragment"
+        android:label="@string/menu_business"
+        tools:layout="@layout/fragment_business" />
+
+    <fragment
+        android:id="@+id/nav_jobs"
+        android:name="com.animator.navigation.ui.jobs.JobsFragment"
+        android:label="@string/menu_Jobs"
+        tools:layout="@layout/fragment_jobs" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.animator.navigation.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_galleryVideo"
+        android:name="com.animator.navigation.ui.videogallery.VideoFragment"
+        android:label="@string/menu_gallery_video"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_matrimonial"
+        android:name="com.animator.navigation.ui.matrimonial.MatrimonialFragment"
+        android:label="@string/menu_matrimonial"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_donate"
+        android:name="com.animator.navigation.ui.donate.DonateFragment"
+        android:label="@string/menu_donate"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.animator.navigation.ui.contactus.ContactUsFragment"
+        android:label="@string/menu_contactus"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.animator.navigation.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login"/>
+
+    <fragment
+        android:id="@+id/nav_reset"
+        android:name="com.animator.navigation.ui.login.ResetFragment"
+        android:label="@string/menu_reset"
+        tools:layout="@layout/fragment_reset"/>
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.animator.navigation.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.animator.navigation.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>

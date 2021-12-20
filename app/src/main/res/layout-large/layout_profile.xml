@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#fefefe"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/profileshape"
+            android:layout_height="110dp">
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_marginTop="50dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+<!--    <ImageView-->
+<!--        android:id="@+id/profileIv"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_gravity="center|top"-->
+<!--        android:src="@drawable/chris"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family Id: "
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/fIdTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F00001"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Id: "
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/mIdTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M00001 "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chris Hemsworth"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age: "
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Group: "
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/bloodTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O +ve"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/mobileTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91 9989764657"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Id: "
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcde@gmail.com"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/addressTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23/33, aaa ddd ggggg ff\nddd fff gggg,\nMumbai 400000"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/educationTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Graduate Bcom"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocupation: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/designationTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Human Resource"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    android:background="@color/background"
+    tools:context=".ui.profile.DeleteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/memberTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Reason: "
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:lines="3"
+            android:hint="delete reason"/>
+
+        <Button
+            android:id="@+id/deleteBt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/btnbackground"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</FrameLayout>

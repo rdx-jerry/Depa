@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/callLL"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@null">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="25dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardElevation="0dp"
+            android:background="@null">
+
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu_profile"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/img"/>-->
+        <TextView
+            android:id="@+id/conNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Max"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/conNumTv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="9878948576"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:id="@+id/frame"
+    tools:context=".ui.feedback.FeedbackFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/feedbackEt"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:hint="add your feedback"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:background="@drawable/box"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/feedbackBt"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnbackground"
+            android:text="Save Feedback"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</FrameLayout>

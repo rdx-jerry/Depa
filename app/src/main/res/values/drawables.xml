@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item name="ic_menu_home" type="drawable">@android:drawable/ic_menu_home</item>-->
+<!--    <item name="ic_menu_news" type="drawable">@android:drawable/ic_menu_news</item>-->
+<!--    <item name="ic_menu_today" type="drawable">@android:drawable/ic_menu_today</item>-->
+<!--    <item name="ic_menu_blog" type="drawable">@android:drawable/ic_menu_blog</item>-->
+<!--    <item name="ic_menu_business" type="drawable">@android:drawable/ic_menu_business</item>-->
+<!--    <item name="ic_menu_job" type="drawable">@android:drawable/ic_menu_job</item>-->
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+</resources>

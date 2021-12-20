@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/callLL"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/img"/>
+        <TextView
+            android:id="@+id/conNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Max"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/conNumTv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="9878948576"/>-->
+
+</RelativeLayout>

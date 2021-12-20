@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "275568819014",
+    "project_id": "shreedepa-20504",
+    "storage_bucket": "shreedepa-20504.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275568819014:android:e5685a6e1b10a5b81d0347",
+        "android_client_info": {
+          "package_name": "com.animator.navigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275568819014-380c7647a99rbf48j9482dsdre79ipag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH-p2rOSmVvtPXC3JC5E6l46BQzdWrBiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275568819014-380c7647a99rbf48j9482dsdre79ipag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

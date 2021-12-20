@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="5dp"
+    tools:context=".ui.blogs.AddBlogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blog Title"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/blogName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blog title"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write Your Blog"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blog "
+            android:lines="10"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Blog Images (Max 3 Images)"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/chooseImage"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btnbackground"
+            android:drawableLeft="@drawable/ic_attach_file_24"
+            android:paddingLeft="5dp"
+            android:text="Select Images"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/mButton"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btnbackground"
+            android:drawableLeft="@drawable/ic_done_all_24"
+            android:paddingLeft="5dp"
+            android:text="Submit Details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</FrameLayout>

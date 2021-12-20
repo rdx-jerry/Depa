@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/frame"
+    android:clickable="true"
+    android:background="@color/white"
+    tools:context=".ui.business.EditBusinessFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Name: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/businessName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="@string/business"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category: "
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="3dp"/>
+                <Spinner
+                    android:id="@+id/categorySp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Description: "
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="@string/description"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Person: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/contactPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="Contact Person"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="@string/mobile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="@string/email"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:hint="Address"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pincode: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="Pincode"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Website: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="@string/website"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facebook: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/fblink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="@string/fb"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instagram: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/instalink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="@string/insta"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Twitter: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/twitterlink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="@string/twitter"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/chooseImage"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Select Logo"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btnbackground"
+                    android:drawableLeft="@drawable/ic_attach_file_24"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/chooseCard"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Select Visiting Card"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btnbackground"
+                    android:drawableLeft="@drawable/ic_attach_file_24"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/chooseVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Select Video"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btnbackground"
+                    android:drawableLeft="@drawable/ic_attach_file_24"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/mButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="3dp"
+                    android:text="Submit Details"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btnbackground"
+                    android:drawableLeft="@drawable/ic_done_all_24"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

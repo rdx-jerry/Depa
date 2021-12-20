@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@null"
+    android:gravity="center"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/whatsappTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/whatsapp30" />
+    <TextView
+        android:id="@+id/callTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/mobile30" />
+
+</LinearLayout>
+

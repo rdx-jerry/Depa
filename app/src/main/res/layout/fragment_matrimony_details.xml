@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".ui.profile.MatrimonyDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:id="@+id/llMainContent"
+            android:layout_above="@+id/ll_add_matrimony"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    cardview:cardCornerRadius="5dp"
+                    cardview:cardElevation="3dp"
+                    cardview:cardPreventCornerOverlap="true"
+                    cardview:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"/>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:text="test test test test test"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <!--<LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/dob"
+                                android:textSize="18sp"
+                                android:text="DOB: 1992-03-15"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/age"
+                                android:textSize="18sp"
+                                android:text="AGE: 20"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>-->
+
+                        <!--<LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/height"
+                                android:textSize="18sp"
+                                android:text="HEIGHT: 5.5"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/weight"
+                                android:textSize="18sp"
+                                android:text="WEIGHT: 40"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>-->
+
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/dob"
+                            android:textSize="18sp"
+                            android:text="DOB: 1992-03-15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/age"
+                            android:textSize="18sp"
+                            android:text="AGE: 20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/height"
+                            android:textSize="18sp"
+                            android:text="HEIGHT: 5.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/weight"
+                            android:textSize="18sp"
+                            android:text="WEIGHT: 40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/birth_place"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18sp"
+                            android:text="BIRTH PLACE: KURLA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/birth_time"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18sp"
+                            android:text="BIRTH TIME: 12:37:00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/mother_name"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18sp"
+                            android:text="Mother Name: XDXDGGXD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/education"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18sp"
+                            android:text="EDUCATION: PRE &amp; PRIMARY SCHOOL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/occupation"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18sp"
+                            android:text="OCCUPATION: STUDENT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:autoLink="phone"
+                            android:id="@+id/contact"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18sp"
+                            android:text="CONTACT: 9876543210"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/nanaTv"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18sp"
+                            android:text="Nana Nani's Village"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add_matrimony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/add_matrimony_request"
+                android:background="@drawable/bg_gradient"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="Request Sagpan Setu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

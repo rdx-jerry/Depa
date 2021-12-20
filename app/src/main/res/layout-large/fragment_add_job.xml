@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/background"
+    tools:context=".ui.jobs.AddJobFragment">
+
+    <ScrollView
+        android:paddingBottom="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Title: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/JobName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="Enter Job Title"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Designation: "
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="3dp"/>
+                <Spinner
+                    android:id="@+id/designationSp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Description: "-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginLeft="3dp"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/description"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:hint="@string/description"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Person: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/contactPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="Contact Person"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="@string/mobile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="@string/email"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CTC: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/starteCtc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:hint="200000"/>
+                <EditText
+                    android:id="@+id/endtCtc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:hint="500000"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of Opening: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/opening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="no. of opening"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="Address"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Street: "-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginLeft="3dp"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/street"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20dp"-->
+<!--                android:hint="Street"-->
+<!--                android:textColor="@color/black"/>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Locatin: "-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginLeft="3dp"/>-->
+<!--            <Spinner-->
+<!--                android:id="@+id/areaSp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1" />-->
+<!--            </LinearLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experiance: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+            <EditText
+                android:id="@+id/experiance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Experiance"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Application Date: "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/startDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:editable="false"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:hint="Start Date"/>
+                <EditText
+                    android:id="@+id/endtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:editable="false"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:hint="End Date"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/mButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Submit Details"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btnbackground"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

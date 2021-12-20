@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ui.blogs.AddBlogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Contact Person: "
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/contactPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Person"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Contact: "
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blog Title"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/blogName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blog title"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write Your Blog"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blog "
+            android:lines="10"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Blog Images"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/chooseImage"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btnbackground"
+            android:drawableLeft="@drawable/ic_attach_file_24"
+            android:paddingLeft="5dp"
+            android:text="Select Logo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/mButton"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btnbackground"
+            android:drawableLeft="@drawable/ic_done_all_24"
+            android:paddingLeft="5dp"
+            android:text="Submit Details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</FrameLayout>

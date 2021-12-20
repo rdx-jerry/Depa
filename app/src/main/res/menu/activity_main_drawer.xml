@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/action_about" />
+        <item
+            android:id="@+id/nav_activity"
+            android:icon="@drawable/activity"
+            android:title="@string/menu_activity" />
+<!--        <item-->
+<!--            android:id="@+id/nav_news"-->
+<!--            android:icon="@drawable/ic_menu_news"-->
+<!--            android:title="@string/menu_news" />-->
+<!--
+        <item
+            android:id="@+id/nav_todays"
+            android:icon="@drawable/ic_menu_today"
+            android:title="@string/menu_todays" />
+-->
+        <item
+            android:id="@+id/nav_business"
+            android:icon="@drawable/ic_menu_business"
+            android:title="@string/menu_business" />
+        <item
+            android:id="@+id/nav_jobs"
+            android:icon="@drawable/ic_menu_job"
+            android:title="@string/menu_Jobs" />
+        <item
+            android:id="@+id/nav_blogs"
+            android:icon="@drawable/ic_menu_blog"
+            android:title="@string/menu_blogs" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_galleryVideo"
+            android:icon="@drawable/ic_video_library_24"
+            android:title="@string/menu_gallery_video" />
+        <item
+            android:id="@+id/nav_directory"
+            android:icon="@drawable/ic_baseline_speaker_notes_24"
+            android:title="@string/menu_directory" />
+
+        <item
+            android:id="@+id/nav_matrimony"
+            android:icon="@drawable/ic_menu_matrimonial"
+            android:title="@string/menu_matrimony" />
+
+        <item
+            android:id="@+id/nav_helpus"
+            android:icon="@drawable/rupees"
+            android:title="@string/menu_helpus" />
+
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/outline_volunteer_activism_black_24"
+            android:title="@string/menu_donate" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_menu_call"
+            android:title="@string/menu_contactus" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/action_profile" />
+        <item
+            android:id="@+id/nav_matrimonial"
+            android:icon="@drawable/ic_menu_matrimonial"
+            android:title="@string/menu_matrimonial"
+            android:visible="false"/>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/user">
+        <item android:title="User">
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout50"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/login50"
+                android:title="Login" />
+            <item
+                android:id="@+id/nav_reset"
+                android:icon="@drawable/ic_reset_24"
+                android:title="Reset" />
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+
+        android:id="@+id/communicate">
+        <item android:title="Communicate">
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+<!--
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+-->
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/company">
+        <item android:title="Developed by - The Animator" />
+        <item android:title="Copyright - 2021"/>
+    </group>
+
+</menu>

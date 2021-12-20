@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".ui.register.RegisterFragment">
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="enter address"/>
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter emailId"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/mobileEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter mobile no."
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/addressEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter address"
+        android:textSize="20dp"/>
+    <Spinner
+        android:id="@+id/stateSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/birthDateEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="select date"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/ageTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age: 26"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20dp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/regBt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btnbackground"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

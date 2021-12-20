@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/frame"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:padding="5dp"
+    tools:context=".ui.contactus.ContactUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/imageView"-->
+                    <!--                        android:tag="image_tag"-->
+                    <!--                        android:layout_width="50dp"-->
+                    <!--                        android:layout_height="50dp"-->
+                    <!--                        android:layout_margin="5dp"-->
+                    <!--                        android:src="@drawable/officecon"/>-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Depa Bombay Mahajan"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="350dp"
+                            android:layout_height="90dp"
+                            android:gravity="center"
+                            android:text="C-202, Butterfly Building, 493, Bhavani Shankar Road, Dadar(West), Mumbai – 400028."
+                            android:textColor="@color/black"
+                            android:textSize="22dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:textSize="20dp"-->
+                    <!--                android:drawableLeft="@drawable/ic_baseline_home_work_30"-->
+                    <!--                android:text="  Address: "-->
+                    <!--                android:textColor="@color/black"/>-->
+                    <!--            <TextView-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:textSize="20dp"-->
+                    <!--                android:text="@string/address"-->
+                    <!--                android:textColor="@color/black"/>-->
+                    <TextView
+                        android:textSize="20dp"
+                        android:autoLink="web"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:drawableLeft="@drawable/gmail30"
+                        android:text="  https://goo.gl/maps/AyaWS2HtMcn7jDAG9"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="phone"
+                        android:clickable="true"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="16dp"
+                        android:drawableLeft="@drawable/ic_menu_call"
+                        android:text=" Shree Dhiraj Mavji Chheda : +91 982 104 5961"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/call1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="phone"
+                        android:clickable="true"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="16dp"
+                        android:drawableLeft="@drawable/ic_menu_call"
+                        android:text=" Shree Navin (Jitu) Manilal Savla : +91 932 265 6566"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:textSize="20dp"
+                        android:autoLink="web"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:drawableLeft="@drawable/website30"
+                        android:text="  www.panjodepa.com"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:textSize="20dp"
+                        android:autoLink="email"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:drawableLeft="@drawable/ic_email30dp"
+                        android:text="  shreedepa1@gmail.com"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Name: "
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="3dp"/>
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:hint="@string/name"/>
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="1dp"-->
+                    <!--                android:background="@android:color/darker_gray"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Email: "
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="3dp"/>
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:hint="@string/email"/>
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="1dp"-->
+                    <!--                android:background="@android:color/darker_gray"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Your Contact: "
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="3dp"/>
+                    <EditText
+                        android:id="@+id/contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:hint="Mobile"/>
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="1dp"-->
+                    <!--                android:background="@android:color/darker_gray"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Reason: "
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="3dp"/>
+                    <EditText
+                        android:id="@+id/reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:hint="Reason"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/white">
+                <Button
+                    android:id="@+id/feedbackBt"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btnbackground"
+                    android:text="Send Message"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"/>
+                <!--        <ImageButton-->
+                <!--            android:id="@+id/fbIb"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:src="@drawable/facebook30"-->
+                <!--            android:background="@color/white"-->
+                <!--            android:layout_weight="1"/>-->
+                <!--        <ImageButton-->
+                <!--            android:id="@+id/gmailIb"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:src="@drawable/gmail30"-->
+                <!--            android:background="@color/white"-->
+                <!--            android:layout_weight="1"/>-->
+                <!--        <ImageButton-->
+                <!--            android:id="@+id/youtubeIb"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:background="@color/white"-->
+                <!--            android:src="@drawable/youtube30"-->
+                <!--            android:layout_weight="1"/>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".ui.profile.MatrimonyDeleteMemberFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:id="@+id/llMainContent"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    cardview:cardCornerRadius="5dp"
+                    cardview:cardElevation="3dp"
+                    cardview:cardPreventCornerOverlap="true"
+                    cardview:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/red"
+                            android:layout_marginTop="10dp"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:text="Delete! Member From Matrimony"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"/>
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"/>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="20dp"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:text="test test test test test"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:id="@+id/delete"
+                            android:paddingStart="30dp"
+                            android:paddingEnd="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Yes, Delete"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/red"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

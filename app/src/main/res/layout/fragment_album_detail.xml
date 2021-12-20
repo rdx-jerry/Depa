@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/background"
+    tools:context=".ui.gallery.AlbumDetailFragment">
+
+    <LinearLayout
+        android:paddingBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:autoLink="web"
+            android:clickable="true"
+            android:textColor="@color/bluePrimary"
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="normal|bold|italic"
+            android:textColor="#e91e63"
+            android:gravity="center"
+            android:id="@+id/linkTv"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View - Google Drive"
+            android:visibility="gone"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/linkTv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/red"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textSize="15dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:linksClickable="true"-->
+<!--            android:autoLink="web"-->
+<!--            android:visibility="gone"/>-->
+
+        <GridView
+            android:id="@+id/galleryGv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="2dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

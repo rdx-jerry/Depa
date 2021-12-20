@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:id="@+id/frame"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ui.directory.DirectoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/searchRl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:background="#4dc9ff">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:text="Search"
+               android:textSize="20dp"
+               android:textColor="@color/white"
+               android:layout_weight="1"
+               android:gravity="center"/>
+           <LinearLayout
+               android:weightSum="5"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:layout_weight="4"
+                   android:id="@+id/telephoneSearchEt"
+                   android:layout_width="0dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="bottom"
+                   android:textSize="15dp"
+                   android:visibility="visible"
+                   android:paddingLeft="20dp"
+                   android:paddingEnd="20dp"
+                   android:background="@color/white"
+                   android:layout_marginBottom="5dp"/>
+
+               <ImageView
+                   android:id="@+id/filter"
+                   android:layout_weight="1"
+                   android:src="@drawable/baseline_filter_list_black_18"
+                   android:layout_width="0dp"
+                   android:layout_height="28dp"/>
+
+           </LinearLayout>
+       </LinearLayout>
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/telephoneRv"
+            android:layout_below="@+id/searchRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvIndex"
+            android:layout_below="@+id/searchRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true" />
+
+</RelativeLayout>

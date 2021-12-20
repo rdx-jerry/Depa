@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    android:background="@color/white"
+    tools:context=".ui.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/userNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:hint="@string/username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="17dp"
+            android:hint="@string/password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_weight="1">-->
+<!--            <androidx.appcompat.widget.AppCompatCheckBox-->
+<!--                android:id="@+id/remembermeCb"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Remember Me"-->
+<!--                android:textSize="17dp"/>-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/showpassCb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:textSize="17dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/loginBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/btnbackground" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/forgetCredBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Credential"
+                android:textSize="17dp"
+                android:textAllCaps="false"
+                android:textColor="@color/bluePrimary"
+                android:layout_weight="1"
+                android:background="@null"/>
+            <Button
+                android:id="@+id/altLoginBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Time Login"
+                android:textSize="17dp"
+                android:textAllCaps="false"
+                android:textColor="@color/bluePrimary"
+                android:layout_weight="1"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/skipBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip Login"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/bluePrimary"
+                android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

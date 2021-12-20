@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:paddingBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+
+            <Spinner
+                android:id="@+id/aboutSp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:popupBackground="@color/silver" />
+
+        </androidx.cardview.widget.CardView>
+
+        <WebView
+            android:id="@+id/aboutView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--    <com.google.android.material.tabs.TabLayout-->
+    <!--        android:id="@+id/aboutTab"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:tabGravity="fill"-->
+    <!--        app:tabMaxWidth="0dp"-->
+    <!--        app:tabTextColor="@color/white"-->
+    <!--        app:tabIndicatorColor="@color/white"-->
+    <!--        app:tabIndicatorHeight="4dp"-->
+    <!--        app:tabBackground="@color/colorPrimary"-->
+    <!--        app:tabMode="scrollable"/>-->
+
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:id="@+id/tabViewPager"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:gravity="center_vertical"/>-->
+
+</RelativeLayout>

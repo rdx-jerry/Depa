@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="5dp"
+    tools:context=".ui.login.ResetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/memberId"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Old Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/oldPass"
+            android:hint="Old Password"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="New Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetPass"
+            android:hint="Reset Password"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Confirm Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmPass"
+            android:hint="Confirm Password"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetPassBt"
+            android:layout_marginTop="20dp"
+            android:text="Reset Password"
+            android:textSize="17dp"
+            android:textAllCaps="false"
+            android:background="@drawable/btnbackground"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>
